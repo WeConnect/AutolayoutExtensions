@@ -20,12 +20,12 @@ public extension UIView {
     }
     
     @discardableResult
-    public func addConstraints(formatStrings: [String], options: NSLayoutFormatOptions, views: [String: AnyObject]) -> [NSLayoutConstraint] {
+  public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, views: [String: AnyObject]) -> [NSLayoutConstraint] {
         return addConstraints(formatStrings: formatStrings, options: options, metrics: [:], views: views)
     }
     
     @discardableResult
-    public func addConstraints(formatStrings: [String], options: NSLayoutFormatOptions, metrics: [String: Any], views: [String: AnyObject]) -> [NSLayoutConstraint] {
+  public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, metrics: [String: Any], views: [String: AnyObject]) -> [NSLayoutConstraint] {
         var constraints = [NSLayoutConstraint]()
         
         for formatString in formatStrings {
