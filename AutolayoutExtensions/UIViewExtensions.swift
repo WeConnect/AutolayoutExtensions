@@ -8,24 +8,28 @@
 
 
 public extension UIView {
-    
+
+    @objc
     @discardableResult
     public func addConstraints(formatStrings: [String], views: [String: AnyObject]) -> [NSLayoutConstraint] {
         return addConstraints(formatStrings: formatStrings, options: [], metrics: [:], views: views)
     }
-    
+
+    @objc
     @discardableResult
     public func addConstraints(formatStrings: [String], metrics: [String: Any], views: [String: AnyObject]) -> [NSLayoutConstraint] {
         return addConstraints(formatStrings: formatStrings, options: [], metrics: metrics, views: views)
     }
-    
+
+    @objc
     @discardableResult
-  public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, views: [String: AnyObject]) -> [NSLayoutConstraint] {
+    public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, views: [String: AnyObject]) -> [NSLayoutConstraint] {
         return addConstraints(formatStrings: formatStrings, options: options, metrics: [:], views: views)
-    }
-    
+      }
+
+    @objc
     @discardableResult
-  public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, metrics: [String: Any], views: [String: AnyObject]) -> [NSLayoutConstraint] {
+    public func addConstraints(formatStrings: [String], options: NSLayoutConstraint.FormatOptions, metrics: [String: Any], views: [String: AnyObject]) -> [NSLayoutConstraint] {
         var constraints = [NSLayoutConstraint]()
         
         for formatString in formatStrings {
