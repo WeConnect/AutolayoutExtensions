@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'AutolayoutExtensions'
-  s.version = '0.1.2'
+  s.version = '0.1.3'
   s.summary = 'A WIP autolayout helper.'
   s.homepage = 'https://github.com/WeConnect/AutolayoutExtensions'
   s.social_media_url = 'https://twitter.com/WeWork'
